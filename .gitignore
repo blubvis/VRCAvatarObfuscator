@@ -69,4 +69,5 @@ ProjectSettings/GraphicsSettings.asset
 Assets/Textures/Photoboard.psd
 
 # FireteamVR stuff
-New copies/
+New copies/*
+!New copies/dummy_file
