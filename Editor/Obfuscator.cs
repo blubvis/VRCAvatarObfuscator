@@ -219,6 +219,7 @@ namespace BlubvisHroi.VRC.Obfuscator
                         // Handling for regular key value pairs
                         char[] trimChars = {' ', '-'};
                         int splitLoc = newLine.IndexOf(':');
+                        if (splitLoc == -1) continue;
                         string beforeSeperator = newLine.Substring(0, splitLoc);
                         string key = beforeSeperator.Trim(trimChars);
                         string value = newLine.Substring(splitLoc + 1).Trim(trimChars);
